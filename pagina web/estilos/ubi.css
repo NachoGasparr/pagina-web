@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+    nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    }
+    
+    nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    
+    nav li {
+    margin-right: 2rem;
+    }
+    
+    nav a {
+    color: #FFFFFF; 
+    text-decoration: none;
+    transition: color 0.2s ease;
+    }
+    
+    nav a:hover {
+    color: #CCCCFF; 
+    }
+
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+header nav ul li {
+    margin-right: 20px;
+    }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    }
+
+section #contacto {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+button#mapa {
+    background-color: #dbdd62d0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+button#mapa:hover {
+    background-color: #a78641;
+    }
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    }
+
+@keyframes animacion {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+        }
+    100% {
+        transform: translateY(20px);
+        opacity: 1;
+        }
+    }
+
+button#mapa {
+    animation: animacion 0.5s ease-in-out;
+    }

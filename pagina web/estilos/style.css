@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url(/img/cafeteria\ fondo.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #fffdfc;
+    font-size: 25px;
+    font-weight: 800;
+    max-width: 100%;
+
+}
+
+.navbar {
+    max-width: 100%;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #fffdfc;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: #ce967b;
+}
+
+#menu {
+    display: none;
+}
+
+#menu:checked ~.navbar {
+    display: block;
+}
+
+.menu-icono {
+    width: 25px;
+    cursor: pointer;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    text-align: center;
+    max-width: 100%;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #ce967b;
+    color: #f9fafc;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+    background-color: bisque;
+}
+
+.coffe {
+    padding: 100px 0;
+    background-color: #e1e2e6;
+    position: relative;
+}
+
+.coffe-content {
+    text-align: center;
+    max-width: 100%;
+}
+
+.coffe-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p {
+    font-size: 16px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+.coffe-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+}
+
+.coffe-1 img {
+    width: 200px;
+}
+
+.coffe-1 {
+    padding: 0 25px;
+    max-width: 100%;
+}
+
+.coffe-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.coffe-1 h3 {
+    color: #323337;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.services {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)),
+        url(/img/bg2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cove;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.services-content {
+    text-align: center;
+    max-width: 100%;
+}
+
+.services-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.services-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.services-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.services-1 {
+    padding: 0 100px;
+}
+
+.services-1 img {
+    width: 25px;
+    margin-bottom: 15px;
+}
+
+.services-1 h3 {
+    color: #eaccb3;
+    font-size: 18px;
+}
+
+.general {
+    display: flex;
+
+}
+
+.general-1 {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #e1e2e6;
+    max-width: 100%;
+}
+
+.general-2 {
+    background-image: url(/img/coffe-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    max-width: 100%;
+}
+
+.general-3 {
+    background-image: url(/img/coffee-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0;
+}
+
+
+.wrapper {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.wrapper .icon {
+    max-width: 100%;
+    position: relative;
+    background: #e48e6c;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: top center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+    background: #1877F2;
+    color: #ffffff;
+}
+
+.wrapper .tiktok:hover,
+.wrapper .tiktok:hover .tooltip,
+.wrapper .tiktok:hover .tooltip::before {
+    background: #000000;
+    color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+    background: #7a21b6;
+    color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+    background: #CD201F;
+    color: #ffffff;
+}
+
+.wrapper-icon {
+    display: flex;
+    justify-content: center;
+    align-items: top center;
+    height: 100vh;
+    width: 100%;
+}
+
+.copyright {
+    text-align: center;
+    flex-basis: 100%;
+}
+
+@media (max-width: 865px) {
+    .header-content h1 {
+        font-size: 50px;
+    }
+    
+    .header-content p {
+        padding: 0 50px;
+    }
+    
+    .coffe-content h2 {
+        font-size: 40px;
+        padding: 0 50px;
+    }
+    
+    .txt-p {
+        padding: 0 50px;
+    }
+    
+    .services-content h2 {
+        font-size: 40px;
+    }
+    
+    .services-content p {
+        padding: 0 50px;
+    }
+    
+    .general-1 {
+        width: 100%;
+        padding: 50px 25px;
+    }
+    
+    .general-2,
+    .general-3 {
+        width: 100%;
+    }
+    }
+
+@media (max-width: 768px) {
+.header-content h1 {
+    font-size: 50px;
+}
+
+.header-content p {
+    padding: 0 50px;
+}
+
+.coffe-content h2 {
+    font-size: 40px;
+    padding: 0 50px;
+}
+
+.txt-p {
+    padding: 0 50px;
+}
+
+.services-content h2 {
+    font-size: 40px;
+}
+
+.services-content p {
+    padding: 0 50px;
+}
+
+.general-1 {
+    width: 100%;
+    padding: 50px 25px;
+}
+
+.general-2,
+.general-3 {
+    width: 100%;
+}
+}

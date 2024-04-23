@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.226)), url('/img/fondo\ menu11.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 2rem;
+}
+
+nav a {
+    color: #FFFFFF; 
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #CCCCFF; 
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+    margin-top: 100px;
+}
+
+.menu-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.menu-item .menu-description {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.menu-item .menu-description h2 {
+    margin-bottom: 10px;
+}
+
+.menu-item .menu-description p {
+    margin-bottom: 20px;
+}
+
+.menu-grid.menu-grid-reverse {
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+    position: relative;
+    z-index: 100;
+}
+
+.menu-item.menu-item-reverse {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item.menu-item-reverse img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.menu-item.menu-item-reverse .menu-description {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.menu-item.menu-item-reverse .menu-description h2 {
+    margin-bottom: 10px;
+}
+
+.menu-item.menu-item-reverse .menu-description p {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .menu-grid {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 40px;
+    }
+    .menu-item {
+        padding: 10px;
+    }
+    .menu-item img {
+        height: 10rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 100px;
+    }
+    .menu-item {
+        padding: 5px;
+    }
+    .menu-item img {
+        height: 7rem;
+    }
+}
+
+.navbar-nav li:hover {
+    color: #fff;
+    border-color: #333;
+    padding: 10px 10px 10px 30px;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.navbar-nav li:hover a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover .menu-description {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item.menu-item-reverse:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item.menu-item-reverse:hover .menu-description {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
