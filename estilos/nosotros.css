@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5); /* fondo negro transparente */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 2rem;
+}
+
+nav a {
+    color: #FFFFFF; /* letras blancas */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #CCCCFF; /* letras blancas con un tono azulado al pasar sobre ellas */
+}
+
+.general{
+    display: flex;
+}
+
+.general-1{
+    width: 50%;
+    padding: 150px;
+    background-color: #e1e2e6;
+}
+
+.general-2{
+    background-image: url(/img/encontramos.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+
+}
+
+.general-3{
+    background-image: url(/img/cafe\ en\ plato1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+h2{
+    font-size: 55px;
+    line-height: 70px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #ce967b;
+    color: #f9fafc;
+    text-transform: uppercase;
+}
+
+.btn-1:hover{
+    background-color: #ebad8d;
+}
+
+@media (max-width: 990px) {
+    .header-content h1 {
+        font-size: 50px;
+    }
+    
+    .header-content p {
+        padding: 0 50px;
+    }
+    
+    .coffe-content h2 {
+        font-size: 40px;
+        padding: 0 50px;
+    }
+    
+    .txt-p {
+        padding: 0 50px;
+    }
+    
+    .services-content h2 {
+        font-size: 40px;
+    }
+    
+    .services-content p {
+        padding: 0 50px;
+    }
+    
+    .general-1 {
+        width: 100%;
+        padding: 50px 25px;
+    }
+    
+    .general-2,
+    .general-3 {
+        width: 100%;
+    }
+    }
+
+@media (max-width: 887px) {
+    .header-content h1 {
+        font-size: 50px;
+    }
+    
+    .header-content p {
+        padding: 0 50px;
+    }
+    
+    .coffe-content h2 {
+        font-size: 40px;
+        padding: 0 50px;
+    }
+    
+    .txt-p {
+        padding: 0 50px;
+    }
+    
+    .services-content h2 {
+        font-size: 40px;
+    }
+    
+    .services-content p {
+        padding: 0 50px;
+    }
+    
+    .general-1 {
+        width: 100%;
+        padding: 50px 25px;
+    }
+    
+    .general-2,
+    .general-3 {
+        width: 100%;
+    }
+    }
+
+@media (max-width: 768px) {
+    .header-content h1 {
+    font-size: 50px;
+}
+
+.header-content p {
+    padding: 0 50px;
+}
+
+.coffe-content h2 {
+    font-size: 40px;
+    padding: 0 50px;
+}
+
+.txt-p {
+    padding: 0 50px;
+}
+
+.services-content h2 {
+    font-size: 40px;
+}
+
+.services-content p {
+    padding: 0 50px;
+}
+
+.general-1 {
+    width: 100%;
+    padding: 50px 25px;
+}
+
+.general-2,
+.general-3 {
+    width: 100%;
+}
+}
+
+
