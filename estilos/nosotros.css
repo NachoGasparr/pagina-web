@@ -13,7 +13,7 @@ body {
 }
 
 nav {
-    background-color: rgba(0, 0, 0, 0.5); /* fondo negro transparente */
+    background-color: rgba(0, 0, 0, 0.5); 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,13 +38,13 @@ nav li {
 }
 
 nav a {
-    color: #FFFFFF; /* letras blancas */
+    color: #FFFFFF;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 nav a:hover {
-    color: #CCCCFF; /* letras blancas con un tono azulado al pasar sobre ellas */
+    color: #CCCCFF;
 }
 
 .general{
@@ -136,7 +136,44 @@ p{
     }
     }
 
-@media (max-width: 887px) {
+    @media (max-width: 865px) {
+        .header-content h1 {
+        font-size: 50px;
+        }
+        
+        .header-content p {
+        padding: 0 50px;
+        }
+        
+        .coffe-content h2 {
+        font-size: 40px;
+        padding: 0 50px;
+        }
+        
+        .txt-p {
+        padding: 0 50px;
+        }
+        
+        .services-content h2 {
+        font-size: 40px;
+        }
+        
+        .services-content p {
+        padding: 0 50px;
+        }
+        
+        .general-1 {
+        width: 100%;
+        padding: 50px 25px;
+        }
+        
+        .general-2,
+        .general-3 {
+            width: 100%;
+        }
+        }
+    
+    @media (max-width: 768px) {
     .header-content h1 {
         font-size: 50px;
     }
@@ -172,42 +209,207 @@ p{
         width: 100%;
     }
     }
-
-@media (max-width: 768px) {
+    
+    @media (max-width: 636px) {
+        /* Ajusta el tamaño de las imágenes */
+        img {
+          width: 100%;
+          height: auto;
+        }
+      
+        /* Ajusta el tamaño de los contenedores */
+       .container {
+          max-width: 100%;
+          padding: 20px;
+        }
+      
+        /* Ajusta el tamaño de los títulos */
+        h1, h2, h3, h4, h5, h6 {
+          font-size: 18px;
+        }
+      
+        /* Ajusta el tamaño del texto */
+        p {
+          font-size: 14px;
+        }
+      
+        /* Ajusta el tamaño de los botones */
+       .btn-1 {
+          padding: 10px 20px;
+          font-size: 14px;
+        }
+      
+    
+    .menu {
+        flex-direction: column;
+    }
+    
+    .menu.navbar ul li {
+        width: 100%;
+    }
+    
+    .menu.navbar ul li a {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    
+    .services-content {
+        padding: 20px;
+    }
+    
+    .services-content h2 {
+        font-size: 18px;
+    }
+    
+    .services-content p {
+        font-size: 14px;
+    }
+    
+    
+    .general-1,.general-2,.general-3 {
+        width: 100%;
+        padding: 20px;
+        }
+    }
+    
+    @media (max-width: 524px) {
+    
     .header-content h1 {
-    font-size: 50px;
-}
-
-.header-content p {
-    padding: 0 50px;
-}
-
-.coffe-content h2 {
-    font-size: 40px;
-    padding: 0 50px;
-}
-
-.txt-p {
-    padding: 0 50px;
-}
-
-.services-content h2 {
-    font-size: 40px;
-}
-
-.services-content p {
-    padding: 0 50px;
-}
-
-.general-1 {
-    width: 100%;
-    padding: 50px 25px;
-}
-
-.general-2,
-.general-3 {
-    width: 100%;
-}
-}
-
-
+        font-size: 30px;
+    }
+    
+    .header-content p {
+        padding: 0 20px;
+    }
+    
+    .coffe-content h2 {
+        font-size: 30px;
+        padding: 0 20px;
+    }
+    
+    .txt-p {
+        padding: 0 20px;
+    }
+    
+    .services-content h2 {
+        font-size: 30px;
+    }
+    
+    .services-content p {
+        padding: 0 20px;
+    }
+    
+    .general-1 {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .general-2,
+    .general-3 {
+        width: 100%;
+    }
+    
+    
+    img {
+        width: 100%;
+        height: auto;
+    }
+    }
+    
+    
+    @media (max-width: 400px) {
+    
+    .header-content h1 {
+        font-size: 25px;
+    }
+    
+    .menu {
+        flex-direction: column;
+    }
+    
+    .header-content p {
+        padding: 0 15px;
+    }
+    
+    .coffe-content h2 {
+        font-size: 25px;
+        padding: 0 15px;
+    }
+    
+    .txt-p {
+        padding: 0 15px;
+    }
+    
+    .services-content h2 {
+        font-size: 25px;
+    }
+    
+    .services-content p {
+        padding: 0 15px;
+    }
+    
+    .general-1 {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .general-2,
+    .general-3 {
+        width: 100%;
+    }
+    
+    
+        img {
+        width: 100%;
+        height: auto;
+    }
+    }
+    
+    
+    @media (max-width: 300px) {
+    
+    .header-content h1 {
+        font-size: 20px;
+    }
+    
+    .header-content p {
+        padding: 0 10px;
+    }
+    
+    .coffe-content h2 {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+    
+    .txt-p {
+        padding: 0 10px;
+    }
+    
+    .services-content h2 {
+        font-size: 20px;
+    }
+    
+    .services-content p {
+        padding: 0 10px;
+        }
+        
+    .general-1 {
+        width: 100%;
+        padding: 10px;
+    }
+        
+    .general-2,
+    .general-3 {
+        width: 100%;
+    }
+    
+    .menu {
+        flex-direction: column;
+    }
+    
+    img {
+        width: 100%;
+        height: auto;
+    }
+    }
