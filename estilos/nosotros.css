@@ -210,38 +210,35 @@ p{
     }
     }
     
-    @media (max-width: 636px) {
-        /* Ajusta el tamaño de las imágenes */
-        img {
-          width: 100%;
-          height: auto;
-        }
-      
-        /* Ajusta el tamaño de los contenedores */
-       .container {
-          max-width: 100%;
-          padding: 20px;
-        }
-      
-        /* Ajusta el tamaño de los títulos */
-        h1, h2, h3, h4, h5, h6 {
-          font-size: 18px;
-        }
-      
-        /* Ajusta el tamaño del texto */
-        p {
-          font-size: 14px;
-        }
-      
-        /* Ajusta el tamaño de los botones */
-       .btn-1 {
-          padding: 10px 20px;
-          font-size: 14px;
-        }
-      
-    
-    .menu {
-        flex-direction: column;
+@media (max-width: 636px) {
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 100%;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 18px;
+}
+
+
+p {
+    font-size: 14px;
+}
+
+.btn-1 {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+
+.menu {
+    flex-direction: column;
     }
     
     .menu.navbar ul li {
